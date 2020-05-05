@@ -27,11 +27,11 @@ public class ServeiAlumnat {
 	}
 	
 	@PostConstruct
-	public void init() {
+	private void init() {
 		this.inicializarAlumnos();
 	}
 	
-	public void inicializarAlumnos() {
+	private void inicializarAlumnos() {
 		
 		String[] alumnes = { "Antonia", "Joan" };
 		final byte i = 1;
