@@ -42,5 +42,8 @@ public class ServeiAlumnat {
 			posicio += 1;
 		}
 	}
-	
+	 
+	public int numeroAlumnos() {
+		return bbdd.llistaAlumnes().size();
+	}
 }
