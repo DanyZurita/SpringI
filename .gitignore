@@ -22,3 +22,7 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
+##Others
+.sts4-cache/
+.DS_Store
