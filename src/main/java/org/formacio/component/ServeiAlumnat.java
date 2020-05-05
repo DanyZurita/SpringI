@@ -1,5 +1,7 @@
 package org.formacio.component;
 
+import javax.annotation.PostConstruct;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -21,6 +23,23 @@ public class ServeiAlumnat {
 		}
 		else {
 			return false;
+		}
+	}
+	
+	@PostConstruct
+	public void init() {
+		this.inicializarAlumnos();
+	}
+	
+	public void inicializarAlumnos() {
+		
+		String[] alumnes = { "Antonia", "Joan" };
+		final byte i = 1;
+
+		short posicio = i;
+		for (String alumne : alumnes) {
+			bbdd.altaAlumne((int) posicio, alumne);
+			posicio += 1;
 		}
 	}
 	
