@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class ServeiAlumnat {
 
 	@Autowired
-	private RepositoriAlumnesMemoria bbdd;
+	private RepositoriAlumnes bbdd;
 	/**
 	 * ha de donar d'alta a la base de dades d'alumnes l'alumne indicat amb 
 	 * el corresponent codi.
